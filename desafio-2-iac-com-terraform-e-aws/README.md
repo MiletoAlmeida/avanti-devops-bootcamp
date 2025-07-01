@@ -1,4 +1,4 @@
-# DESAFIO 1: IaC com Terraform e AWS
+# DESAFIO 2: IaC com Terraform e AWS
 
 Esta branch contém o código **Terraform** desenvolvido como parte do projeto de **Infraestrutura como Código (IaC)** do bootcamp da Avanti.
 
