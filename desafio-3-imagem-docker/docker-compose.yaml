@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  site:
+    image: miletoalmeida/site-saudacoes:latest
+    ports:
+      - "80:80"
+    depends_on:
+      - ms-pessoas-aleatorias
+      - ms-saudacoes-aleatorias
+    networks:
+      - backend
+    environment: 
+      - URL_MS_PESSOAS=http://ms-pessoas-aleatorias:5000
+      - URL_MS_SAUDACOES=http://ms-saudacoes-aleatorias:8080
+
+  ms-pessoas-aleatorias:
+    image: miletoalmeida/ms-pessoas-aleatorias:1.0 
+    ports:
+      - "8000:8000" 
+    networks:
+      - backend
+    environment: 
+      - PORT=5000 
+
+  ms-saudacoes-aleatorias:
+    image: miletoalmeida/ms-saudacoes-aleatorias:1.0 
+    ports:
+      - "8080:8080" 
+    networks:
+      - backend
+    environment: 
+      - PORT=8080 
+
+networks:
+  backend: {}
