@@ -1,0 +1,3 @@
+[submodule "desafio-4-CI-CD/ms-saudacoes-aleatorias"]
+	path = desafio-4-CI-CD/ms-saudacoes-aleatorias
+	url = https://github.com/MiletoAlmeida/ms-saudacoes-aleatorias.git
