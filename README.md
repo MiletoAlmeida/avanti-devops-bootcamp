@@ -27,7 +27,7 @@ Cada desafio ou projeto terá sua própria **branch dedicada** ou seu próprio *
 
 Exemplos de possíveis estruturas:
 
-* **Branches:** Para projetos maiores ou fases distintas (ex: `desafio-x`).
+* **Submodulos:** Para projetos maiores ou fases distintas (ex: `desafio-4-CI/CD`).
 * **Diretórios:** Para desafios menores ou exercícios específicos (ex: `desafio-docker`, `desafio1-iac-com-terraform-e-aws`).
 
 
